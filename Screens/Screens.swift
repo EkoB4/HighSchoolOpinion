@@ -18,13 +18,15 @@ struct tkkalScreen : View{
   }
 }
 
-struct tkkalScreenPreview : PreviewProvider {
-    static var previews: some View {
-        tkkalScreen()
-        roundRectangle()
+struct fatinRustu : View {
+    var body: some View{
+        VStack{
+            NavigationView{
+                Text("sa")
+            }
+        }
     }
 }
-
 struct roundRectangle : View{
     var  body: some View {
         VStack{
@@ -35,3 +37,12 @@ struct roundRectangle : View{
     }
     
 }
+
+struct allPreviews : PreviewProvider {
+    static var previews: some View {
+        tkkalScreen()
+        fatinRustu()
+        roundRectangle()
+    }
+}
+
