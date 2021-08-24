@@ -15,7 +15,6 @@
 		3545372E26CA9F26001BEC72 /* HighSchoolOpinionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545372D26CA9F26001BEC72 /* HighSchoolOpinionAppUITests.swift */; };
 		3545373C26CAA1BA001BEC72 /* highschoolImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545373B26CAA1BA001BEC72 /* highschoolImages.swift */; };
 		3545374226CB1471001BEC72 /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545374126CB1471001BEC72 /* Screens.swift */; };
-		3545374526CB1590001BEC72 /* buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3545374426CB1590001BEC72 /* buttons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		3545372F26CA9F26001BEC72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3545373B26CAA1BA001BEC72 /* highschoolImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = highschoolImages.swift; sourceTree = "<group>"; };
 		3545374126CB1471001BEC72 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
-		3545374426CB1590001BEC72 /* buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,6 @@
 		3545370426CA9F24001BEC72 = {
 			isa = PBXGroup;
 			children = (
-				3545374626CB1599001BEC72 /* button */,
 				3545374326CB147D001BEC72 /* Screens */,
 				3545373F26CAA290001BEC72 /* Images */,
 				3545370F26CA9F24001BEC72 /* HighSchoolOpinionApp */,
@@ -153,14 +150,6 @@
 				3545374126CB1471001BEC72 /* Screens.swift */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		3545374626CB1599001BEC72 /* button */ = {
-			isa = PBXGroup;
-			children = (
-				3545374426CB1590001BEC72 /* buttons.swift */,
-			);
-			path = button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +282,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3545373C26CAA1BA001BEC72 /* highschoolImages.swift in Sources */,
-				3545374526CB1590001BEC72 /* buttons.swift in Sources */,
 				3545371326CA9F24001BEC72 /* ContentView.swift in Sources */,
 				3545371126CA9F24001BEC72 /* HighSchoolOpinionAppApp.swift in Sources */,
 				3545374226CB1471001BEC72 /* Screens.swift in Sources */,

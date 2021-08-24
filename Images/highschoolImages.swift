@@ -18,21 +18,30 @@ struct Tkkal : View {
     }
 }
 
-struct fatinRustuZorlu : View {
+struct fatinRustuImage: View {
     var body: some View {
         VStack{
             Image("fatinRustu")
-                .frame(width: 300, height: 160)
+                .frame(width: 100, height: 200)
                 .clipped()
                 .cornerRadius(20)
                 .fixedSize()
         }
     }
 }
-
+struct buttonSample :View {
+    var body: some View {
+        VStack{
+            RoundedRectangle(cornerRadius: 20)
+                .background(Color.green)
+                .frame(width: 100, height: 100)
+        }
+    }
+}
 struct Previews : PreviewProvider {
     static var previews: some View {
         Tkkal()
-        fatinRustuZorlu()
+        fatinRustuImage()
+        buttonSample()
     }
 }
