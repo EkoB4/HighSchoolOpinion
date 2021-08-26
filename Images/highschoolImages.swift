@@ -32,9 +32,7 @@ struct fatinRustuImage: View {
 struct buttonSample :View {
     var body: some View {
         VStack{
-            RoundedRectangle(cornerRadius: 20)
-                .background(Color.green)
-                .frame(width: 100, height: 100)
+            LinearGradient(gradient: Gradient(colors: [.blue ,Color("rectangleColor")]), startPoint: .topLeading, endPoint: .bottomLeading).ignoresSafeArea().cornerRadius(20)
         }
     }
 }

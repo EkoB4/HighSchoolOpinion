@@ -22,7 +22,10 @@ struct fatinRustu : View {
     var body: some View{
         VStack{
             NavigationView{
-                Text("sa")
+                VStack{
+                    Circle()
+                        .frame(width: 100, height: 100)
+                }
             }
         }
     }
