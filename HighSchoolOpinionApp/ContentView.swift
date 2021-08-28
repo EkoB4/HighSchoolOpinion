@@ -14,16 +14,23 @@ struct ContentView: View {
             VStack{
                 //Image button sample
                 buttonSample()
-                    .position(x: -37, y: 150)
-                    .frame(width:geo.size.width*0.27, height: geo.size.height*0.2)
+                    .position(x: -73, y: 210)
+                    .frame(width:geo.size.width*0.1, height: geo.size.height*0.25)
                 fatinRustuImage()
-                    .position(x: 100, y: -50)
+                    .position(x: 70, y: -10)
+                    .frame(width: geo.size.width*0.86, height: geo.size.height*0.5)
                     //Navigate link properts
-                  NavigationLink("Click", destination: fatinRustu())
-                    .foregroundColor(.black)
-                    .background(Color.green)
-                    .frame(width: 100, height: 100)
-            }
+                  NavigationLink("Info", destination: fatinRustu())
+                    .foregroundColor(.white)
+                    .position(x: 100, y: -180)
+                
+                buttonSample()
+                    .position(x: -70, y:-90)
+                    .frame(width: geo.size.width*0.1, height: geo.size.height*0.25)
+                Tkkal()
+                    .position(x: 90, y: -260)
+                    .frame(width: geo.size.width*0.95, height: geo.size.height*0.65)
+            }.background(Color.green).ignoresSafeArea()
         }
     }
   }

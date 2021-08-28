@@ -11,8 +11,9 @@ import SwiftUI
 struct Tkkal : View {
     var body: some View{
         Image("tkkalImage")
+            .frame(width: 100, height: 100)
             .clipped()
-            .cornerRadius(20)
+            .cornerRadius(26)
             .fixedSize()
             //.frame(width:app.size.width , height: app.size.height)->for the contentView\
     }
@@ -26,6 +27,7 @@ struct fatinRustuImage: View {
                 .clipped()
                 .cornerRadius(20)
                 .fixedSize()
+            //.frame(width:app.size.width , height: app.size.height)->for the contentView\
         }
     }
 }
@@ -33,6 +35,7 @@ struct buttonSample :View {
     var body: some View {
         VStack{
             LinearGradient(gradient: Gradient(colors: [.blue ,Color("rectangleColor")]), startPoint: .topLeading, endPoint: .bottomLeading).ignoresSafeArea().cornerRadius(20)
+                .frame(width: 100, height: 100)
         }
     }
 }

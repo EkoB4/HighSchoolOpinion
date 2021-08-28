@@ -25,6 +25,7 @@ struct fatinRustu : View {
                 VStack{
                     Circle()
                         .frame(width: 100, height: 100)
+                        .position(x: 100, y: 100)
                 }
             }
         }
