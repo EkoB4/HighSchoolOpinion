@@ -34,9 +34,24 @@ struct fatinRustuImage: View {
 struct buttonSample :View {
     var body: some View {
         VStack{
-            LinearGradient(gradient: Gradient(colors: [.blue ,Color("rectangleColor")]), startPoint: .topLeading, endPoint: .bottomLeading).ignoresSafeArea().cornerRadius(20)
+            LinearGradient(gradient: Gradient(colors: [.orange ,Color("rectangleColor")]), startPoint: .topLeading, endPoint: .bottomLeading).ignoresSafeArea().cornerRadius(20)
                 .frame(width: 100, height: 100)
         }
+    }
+}
+
+struct rectangles : View {
+    var body: some View{
+        VStack{
+            Circle()
+                .frame(width: 400, height: 300)
+                .position(x: 300.0, y: 50)
+                .foregroundColor(.orange)
+            Circle()
+                .frame(width:300, height: 300)
+                .position(x: 120, y: -10)
+                .foregroundColor(.orange.opacity(3))
+        }.background(Color.purple).ignoresSafeArea()
     }
 }
 struct Previews : PreviewProvider {
@@ -44,5 +59,6 @@ struct Previews : PreviewProvider {
         Tkkal()
         fatinRustuImage()
         buttonSample()
+        rectangles()
     }
 }

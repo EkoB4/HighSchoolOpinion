@@ -12,28 +12,42 @@ struct ContentView: View {
         NavigationView{
             GeometryReader{ geo in
             VStack{
+                Circle()
+                    .position(x: 232, y: 70)
+                    .frame(width: geo.size.width*0.8, height: geo.size.height*0.6)
+                    .foregroundColor(.orange)
+                Circle()
+                    .position(x: 100, y: 40)
+                    .frame(width: geo.size.width*0.8, height: geo.size.height*0.6)
+                    .foregroundColor(.orange)
                 //Image button sample
                 buttonSample()
-                    .position(x: -73, y: 210)
+                    .position(x: -95, y: -360)
                     .frame(width:geo.size.width*0.1, height: geo.size.height*0.25)
                 fatinRustuImage()
-                    .position(x: 70, y: -10)
-                    .frame(width: geo.size.width*0.86, height: geo.size.height*0.5)
+                    .position(x: 70, y: -610)
+                    .frame(width: geo.size.width*0.99, height: geo.size.height*0.5)
                     //Navigate link properts
                   NavigationLink("Info", destination: fatinRustu())
                     .foregroundColor(.white)
-                    .position(x: 100, y: -180)
-                
+                    .font(.title)
+                    .position(x: 73, y: -780)
                 buttonSample()
-                    .position(x: -70, y:-90)
+                    .position(x: -95, y:-630)
                     .frame(width: geo.size.width*0.1, height: geo.size.height*0.25)
                 Tkkal()
-                    .position(x: 90, y: -260)
-                    .frame(width: geo.size.width*0.95, height: geo.size.height*0.65)
-            }.background(Color.green).ignoresSafeArea()
+                    .position(x: 72, y: -800)
+                    .frame(width: geo.size.width*0.99, height: geo.size.height*0.65)
+                
+                    NavigationLink("Info", destination : tkkalScreen())
+                        .font(.title)
+                        .position(x: 100, y: 710)
+                        .foregroundColor(.black)
+                
+            }.background(Color.purple).ignoresSafeArea()
         }
     }
-  }
+}
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
