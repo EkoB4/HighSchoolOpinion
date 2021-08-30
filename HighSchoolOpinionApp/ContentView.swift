@@ -19,7 +19,7 @@ struct ContentView: View {
                 Circle()
                     .position(x: 100, y: 40)
                     .frame(width: geo.size.width*0.8, height: geo.size.height*0.6)
-                    .foregroundColor(.orange)
+                    .foregroundColor(.orange.opacity(0.7))
                 //Image button sample
                 buttonSample()
                     .position(x: -95, y: -360)
@@ -33,18 +33,16 @@ struct ContentView: View {
                     .font(.title)
                     .position(x: 73, y: -780)
                 buttonSample()
-                    .position(x: -95, y:-630)
+                    .position(x: -95, y:-720)
                     .frame(width: geo.size.width*0.1, height: geo.size.height*0.25)
                 Tkkal()
-                    .position(x: 72, y: -800)
+                    .position(x: 72, y: -900)
                     .frame(width: geo.size.width*0.99, height: geo.size.height*0.65)
+                NavigationLink("Info", destination: tkkalScreen())
+                    .position(x: 680, y: -980)
+                    .frame(width: geo.size.width*0.5, height: geo.size.height*0.5)
                 
-                    NavigationLink("Info", destination : tkkalScreen())
-                        .font(.title)
-                        .position(x: 100, y: 710)
-                        .foregroundColor(.black)
-                
-            }.background(Color.purple).ignoresSafeArea()
+            }.background(Color.purple.opacity(0.6)).ignoresSafeArea()
         }
     }
 }

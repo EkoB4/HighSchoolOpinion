@@ -40,25 +40,10 @@ struct buttonSample :View {
     }
 }
 
-struct rectangles : View {
-    var body: some View{
-        VStack{
-            Circle()
-                .frame(width: 400, height: 300)
-                .position(x: 300.0, y: 50)
-                .foregroundColor(.orange)
-            Circle()
-                .frame(width:300, height: 300)
-                .position(x: 120, y: -10)
-                .foregroundColor(.orange.opacity(3))
-        }.background(Color.purple).ignoresSafeArea()
-    }
-}
 struct Previews : PreviewProvider {
     static var previews: some View {
         Tkkal()
         fatinRustuImage()
         buttonSample()
-        rectangles()
     }
 }
